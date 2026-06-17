@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useState } from "react";
@@ -41,41 +42,42 @@ export default function FAQSection() {
   return (
     <section
       id="faq"
-      className="relative overflow-hidden py-32 scroll-mt-32"
+      className="relative overflow-hidden py-20 scroll-mt-24"
     >
       {/* Glow */}
-      <div className="absolute left-1/2 top-40 h-[500px] w-[500px] -translate-x-1/2 rounded-full bg-[#F48FB1]/10 blur-[120px]" />
+      <div className="absolute left-1/2 top-32 h-[400px] w-[400px] -translate-x-1/2 rounded-full bg-[#F48FB1]/10 blur-[120px]" />
 
-      <div className="relative mx-auto max-w-5xl px-6">
+      <div className="relative mx-auto max-w-[1000px] px-6 lg:px-10">
 
         {/* Badge */}
-        <div className="mb-8 inline-flex items-center rounded-full border border-[#F48FB1]/20 bg-white/80 px-5 py-2 backdrop-blur-md shadow-sm">
+        <div className="mb-5 inline-flex items-center rounded-full border border-[#F48FB1]/20 bg-white/80 px-4 py-2 backdrop-blur-md shadow-sm">
           <span className="mr-2 text-[#C2185B]">✦</span>
 
-          <span className="text-xs font-semibold uppercase tracking-[0.3em] text-[#C2185B]">
+          <span className="text-xs font-semibold uppercase tracking-[0.25em] text-[#C2185B]">
             FAQ
           </span>
         </div>
 
         {/* Heading */}
-        <h2 className="text-5xl font-bold text-[#4A2040] md:text-7xl">
+        <h2 className="text-4xl font-bold text-[#4A2040] md:text-6xl">
           Honest answers.
         </h2>
 
-        <p className="mt-6 max-w-2xl text-xl text-[#7A5A70]">
+        <p className="mt-4 max-w-2xl text-lg leading-8 text-[#7A5A70]">
           Everything you need to know before getting started with Berrika.
         </p>
 
         {/* FAQ Cards */}
-        <div className="mt-16 space-y-5">
+        <div className="mt-10 space-y-4">
 
           {faqs.map((faq, index) => (
             <div
               key={index}
               className="
                 overflow-hidden
-                rounded-[30px]
-                border border-[#F48FB1]/15
+                rounded-[24px]
+                border
+                border-[#F48FB1]/15
                 bg-white/85
                 backdrop-blur-md
                 shadow-sm
@@ -90,25 +92,25 @@ export default function FAQSection() {
                   w-full
                   items-center
                   justify-between
-                  px-8
-                  py-7
+                  px-6
+                  py-5
                   text-left
                 "
               >
-                <span className="text-xl font-semibold text-[#4A2040]">
+                <span className="text-lg font-semibold text-[#4A2040]">
                   {faq.question}
                 </span>
 
                 <div
                   className="
                     flex
-                    h-10
-                    w-10
+                    h-9
+                    w-9
                     items-center
                     justify-center
                     rounded-full
                     bg-[#FFF8F5]
-                    text-2xl
+                    text-xl
                     text-[#C2185B]
                   "
                 >
@@ -123,7 +125,7 @@ export default function FAQSection() {
                     : "max-h-0 opacity-0"
                 }`}
               >
-                <p className="px-8 pb-8 text-lg leading-relaxed text-[#7A5A70]">
+                <p className="px-6 pb-6 text-base leading-7 text-[#7A5A70]">
                   {faq.answer}
                 </p>
               </div>
@@ -131,6 +133,7 @@ export default function FAQSection() {
           ))}
 
         </div>
+
       </div>
     </section>
   );

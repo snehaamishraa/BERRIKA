@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useEffect, useRef, useState } from "react";
@@ -12,47 +13,46 @@ export default function CountUp({
   suffix = "",
 }: CountUpProps) {
   const [count, setCount] = useState(0);
-  const [started, setStarted] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    const element = ref.current;
+
+    if (!element) return;
+
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting) {
-          setStarted(true);
-        }
+        if (!entry.isIntersecting) return;
+
+        let start = 0;
+        const duration = 1800;
+        const stepTime = 16;
+        const increment = end / (duration / stepTime);
+
+        const timer = setInterval(() => {
+          start += increment;
+
+          if (start >= end) {
+            setCount(end);
+            clearInterval(timer);
+          } else {
+            setCount(Math.floor(start));
+          }
+        }, stepTime);
+
+        observer.unobserve(element);
+
+        return () => clearInterval(timer);
       },
-      { threshold: 0.4 }
+      {
+        threshold: 0.3,
+      }
     );
 
-    if (ref.current) {
-      observer.observe(ref.current);
-    }
+    observer.observe(element);
 
     return () => observer.disconnect();
-  }, []);
-
-  useEffect(() => {
-    if (!started) return;
-
-    let start = 0;
-
-    const duration = 2000;
-    const increment = end / (duration / 16);
-
-    const timer = setInterval(() => {
-      start += increment;
-
-      if (start >= end) {
-        setCount(end);
-        clearInterval(timer);
-      } else {
-        setCount(Math.floor(start));
-      }
-    }, 16);
-
-    return () => clearInterval(timer);
-  }, [started, end]);
+  }, [end]);
 
   return (
     <div ref={ref}>

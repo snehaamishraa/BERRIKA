@@ -1,3 +1,4 @@
+
 export default function TrustBar() {
   const items = [
     "Dietitians from Leading Institutions",
@@ -8,36 +9,57 @@ export default function TrustBar() {
   ];
 
   return (
-    <section className="relative py-4">
-      <div className="mx-auto max-w-[1400px] px-6">
+    <section className="relative py-2 lg:py-4">
+      <div className="mx-auto max-w-[1280px] px-6 lg:px-10">
+
         <div
           className="
             rounded-full
+            border
+            border-[#F3E5EC]
             bg-white/90
+            px-6
+            py-4
             backdrop-blur-md
-            border border-[#F3E5EC]
-            shadow-[0_10px_40px_rgba(74,32,64,0.04)]
-            px-10
-            py-5
+            shadow-[0_8px_30px_rgba(74,32,64,0.04)]
           "
         >
-          <div className="flex items-center justify-center gap-12 overflow-x-auto">
+          <div
+            className="
+              flex
+              items-center
+              justify-center
+              gap-8
+              lg:gap-10
+              overflow-x-auto
+              scrollbar-hide
+            "
+          >
             {items.map((item) => (
               <div
                 key={item}
                 className="flex shrink-0 items-center gap-2"
               >
-                <span className="text-[#66BB6A] font-bold text-lg">
+                <span className="text-base font-bold text-[#66BB6A]">
                   ✓
                 </span>
 
-                <span className="text-[17px] font-medium text-[#6B4B63] whitespace-nowrap">
+                <span
+                  className="
+                    whitespace-nowrap
+                    text-[15px]
+                    lg:text-[16px]
+                    font-medium
+                    text-[#6B4B63]
+                  "
+                >
                   {item}
                 </span>
               </div>
             ))}
           </div>
         </div>
+
       </div>
     </section>
   );
