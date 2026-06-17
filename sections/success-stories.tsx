@@ -51,7 +51,8 @@ export default function SuccessStories() {
       className="
         relative
         overflow-hidden
-        py-20
+        py-16
+        md:py-20
         bg-gradient-to-b
         from-[#4A2040]
         via-[#5B2550]
@@ -61,7 +62,7 @@ export default function SuccessStories() {
       {/* Glow */}
       <div className="absolute left-1/2 top-1/2 h-[500px] w-[500px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#C2185B]/20 blur-[140px]" />
 
-      <div className="relative z-10 mx-auto max-w-[1280px] px-6 lg:px-10">
+      <div className="relative z-10 mx-auto max-w-[1280px] px-5 md:px-8 lg:px-10">
 
         {/* Heading */}
         <div className="text-center">
@@ -79,40 +80,43 @@ export default function SuccessStories() {
               backdrop-blur-md
             "
           >
-            <span className="text-xs font-semibold uppercase tracking-[0.25em] text-[#F48FB1]">
+            <span className="text-[11px] font-semibold uppercase tracking-[0.25em] text-[#F48FB1]">
               Success Stories
             </span>
           </div>
 
-          <h2 className="mt-6 text-4xl font-bold leading-tight text-white md:text-6xl">
+          <h2 className="mt-6 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-white">
             Real families.
             <br />
             Real outcomes.
           </h2>
 
-          <p className="mx-auto mt-4 max-w-2xl text-lg leading-8 text-white/70">
+          <p className="mx-auto mt-4 max-w-2xl text-base md:text-lg leading-7 md:leading-8 text-white/70">
             Not testimonials about an app.
             Testimonials about lives that actually changed.
           </p>
 
         </div>
 
-        {/* Moving Cards */}
-        <div className="relative mt-14 overflow-hidden">
+        {/* Cards */}
+        <div className="relative mt-12 md:mt-14 overflow-hidden">
 
-          <div className="marquee-track flex gap-6">
+          <div className="marquee-track flex gap-4 md:gap-6">
 
             {[...stories, ...stories].map((story, index) => (
               <div
                 key={index}
                 className="
-                  w-[360px]
+                  w-[300px]
+                  md:w-[360px]
                   shrink-0
-                  rounded-[28px]
+                  rounded-[24px]
+                  md:rounded-[28px]
                   border
                   border-white/10
                   bg-white/5
-                  p-6
+                  p-5
+                  md:p-6
                   backdrop-blur-xl
                 "
               >
@@ -127,7 +131,7 @@ export default function SuccessStories() {
                     />
 
                     <div>
-                      <h3 className="text-lg font-bold text-white">
+                      <h3 className="text-base md:text-lg font-bold text-white">
                         {story.name}
                       </h3>
 
@@ -144,7 +148,7 @@ export default function SuccessStories() {
 
                 </div>
 
-                <div className="mt-6 space-y-4">
+                <div className="mt-5 md:mt-6 space-y-4">
 
                   <div>
                     <p className="text-[11px] uppercase tracking-[0.2em] text-[#F48FB1]">

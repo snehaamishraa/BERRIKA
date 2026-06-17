@@ -12,19 +12,19 @@ export default function ResultsSection() {
   ];
 
   return (
-    <section className="relative overflow-hidden py-20">
+    <section className="relative overflow-hidden py-16 md:py-20">
 
       {/* Glow */}
       <div className="absolute left-1/2 top-1/2 h-[450px] w-[450px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#F48FB1]/10 blur-[120px]" />
 
-      <div className="relative mx-auto max-w-[1280px] px-6 lg:px-10">
+      <div className="relative mx-auto max-w-[1280px] px-5 md:px-8 lg:px-10">
 
         <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-14">
 
           {/* LEFT IMAGE */}
           <div className="relative">
 
-            <div className="overflow-hidden rounded-[32px] border border-[#F48FB1]/10 bg-white shadow-[0_20px_50px_rgba(74,32,64,0.06)]">
+            <div className="overflow-hidden rounded-[28px] md:rounded-[32px] border border-[#F48FB1]/10 bg-white shadow-[0_20px_50px_rgba(74,32,64,0.06)]">
               <Image
                 src="/images/berrika-02.png"
                 alt="Healthy Meals"
@@ -34,8 +34,8 @@ export default function ResultsSection() {
               />
             </div>
 
-            {/* Floating Card */}
-            <div className="absolute -bottom-4 -right-4 rounded-3xl border border-white/50 bg-white/90 px-5 py-3 backdrop-blur-md shadow-xl">
+            {/* Floating Card - Desktop Only */}
+            <div className="hidden md:block absolute -bottom-4 -right-4 rounded-3xl border border-white/50 bg-white/90 px-5 py-3 backdrop-blur-md shadow-xl">
 
               <p className="text-xs font-medium text-[#7A5A70]">
                 Meals completed today
@@ -57,14 +57,14 @@ export default function ResultsSection() {
 
               <span className="mr-2 text-[#C2185B]">✦</span>
 
-              <span className="text-xs font-semibold uppercase tracking-[0.25em] text-[#C2185B]">
+              <span className="text-[11px] font-semibold uppercase tracking-[0.25em] text-[#C2185B]">
                 FOR REAL HEALTH RESULTS
               </span>
 
             </div>
 
             {/* Heading */}
-            <h2 className="text-4xl font-bold leading-[1] text-[#4A2040] md:text-6xl">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.05] text-[#4A2040]">
               Breakfast,
               <br />
               lunch,
@@ -82,7 +82,7 @@ export default function ResultsSection() {
             </h2>
 
             {/* Description */}
-            <p className="mt-6 max-w-xl text-lg leading-8 text-[#7A5A70]">
+            <p className="mt-5 max-w-xl text-base md:text-lg leading-7 md:leading-8 text-[#7A5A70]">
               Berrika doesn&apos;t just create a diet chart.
               It coordinates your meals, guides your cook,
               manages grocery needs, and tracks compliance —
@@ -101,7 +101,7 @@ export default function ResultsSection() {
                     ✓
                   </div>
 
-                  <span className="text-base font-medium text-[#4A2040]">
+                  <span className="text-sm md:text-base font-medium text-[#4A2040]">
                     {item}
                   </span>
                 </div>
@@ -112,7 +112,9 @@ export default function ResultsSection() {
             {/* CTA */}
             <button
               className="
-                mt-10
+                mt-8
+                w-full
+                sm:w-auto
                 rounded-2xl
                 bg-gradient-to-r
                 from-[#C2185B]
@@ -133,8 +135,8 @@ export default function ResultsSection() {
             {/* Stats */}
             <div className="mt-12 grid grid-cols-2 gap-4 md:grid-cols-4">
 
-              <div className="rounded-[24px] border border-[#F48FB1]/15 bg-white/80 p-5 backdrop-blur-sm shadow-sm">
-                <h3 className="text-4xl font-bold text-[#C2185B]">
+              <div className="rounded-[24px] border border-[#F48FB1]/15 bg-white/80 p-4 md:p-5 backdrop-blur-sm shadow-sm">
+                <h3 className="text-3xl md:text-4xl font-bold text-[#C2185B]">
                   <CountUp end={87} suffix="%" />
                 </h3>
 
@@ -143,8 +145,8 @@ export default function ResultsSection() {
                 </p>
               </div>
 
-              <div className="rounded-[24px] border border-[#F48FB1]/15 bg-white/80 p-5 backdrop-blur-sm shadow-sm">
-                <h3 className="text-4xl font-bold text-[#C2185B]">
+              <div className="rounded-[24px] border border-[#F48FB1]/15 bg-white/80 p-4 md:p-5 backdrop-blur-sm shadow-sm">
+                <h3 className="text-3xl md:text-4xl font-bold text-[#C2185B]">
                   <CountUp end={4} suffix="kg+" />
                 </h3>
 
@@ -153,8 +155,8 @@ export default function ResultsSection() {
                 </p>
               </div>
 
-              <div className="rounded-[24px] border border-[#F48FB1]/15 bg-white/80 p-5 backdrop-blur-sm shadow-sm">
-                <h3 className="text-4xl font-bold text-[#C2185B]">
+              <div className="rounded-[24px] border border-[#F48FB1]/15 bg-white/80 p-4 md:p-5 backdrop-blur-sm shadow-sm">
+                <h3 className="text-3xl md:text-4xl font-bold text-[#C2185B]">
                   <CountUp end={100} suffix="+" />
                 </h3>
 
@@ -163,8 +165,8 @@ export default function ResultsSection() {
                 </p>
               </div>
 
-              <div className="rounded-[24px] border border-[#F48FB1]/15 bg-white/80 p-5 backdrop-blur-sm shadow-sm">
-                <h3 className="text-4xl font-bold text-[#C2185B]">
+              <div className="rounded-[24px] border border-[#F48FB1]/15 bg-white/80 p-4 md:p-5 backdrop-blur-sm shadow-sm">
+                <h3 className="text-3xl md:text-4xl font-bold text-[#C2185B]">
                   <CountUp end={24} suffix="/7" />
                 </h3>
 

@@ -4,8 +4,7 @@ import Link from "next/link";
 
 export default function HeroSection() {
   return (
-    <section className="relative overflow-hidden bg-[#FFF8F5] pt-24 lg:pt-28 pb-10">
-
+    <section className="relative overflow-hidden bg-[#FFF8F5] pt-28 md:pt-32 lg:pt-36 pb-10 md:pb-16">
       {/* Grid Background */}
       <div
         className="absolute inset-0"
@@ -27,48 +26,46 @@ export default function HeroSection() {
         }}
       />
 
-      <div className="relative z-10 mx-auto max-w-[1280px] px-6 lg:px-10 py-6">
-
-        <div className="grid items-center gap-8 lg:grid-cols-2 lg:gap-12">
-
+      <div className="relative z-10 mx-auto max-w-[1280px] px-5 md:px-8 lg:px-10">
+        <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
           {/* LEFT CONTENT */}
-          <div className="max-w-[600px]">
-
+          <div className="w-full max-w-full lg:max-w-[620px]">
             {/* Badge */}
-            <div className="mb-6 inline-flex items-center rounded-full border border-[#F48FB1]/20 bg-white px-4 py-2 shadow-sm backdrop-blur-md">
+            <div className="mb-6 inline-flex items-center rounded-full border border-[#F48FB1]/20 bg-white px-3 py-2 md:px-4 shadow-sm backdrop-blur-md">
               <span className="mr-2 text-[#C2185B]">✦</span>
 
-              <span className="text-[11px] font-semibold uppercase tracking-[0.28em] text-[#4A2040]">
+              <span className="text-[9px] sm:text-[10px] md:text-[11px] font-semibold uppercase tracking-[0.15em] md:tracking-[0.22em] text-[#4A2040]">
                 INDIA'S FIRST PERSONALIZED NUTRITION PLATFORM
               </span>
             </div>
+            {/* DESKTOP HEADING */} <h1 className="hidden md:block leading-[0.9] tracking-[-0.05em]"> <span className="block text-[72px] lg:text-[80px] font-bold text-[#4A2040]"> No more </span> <span className="block text-[38px] lg:text-[42px] font-semibold italic text-[#C2185B]"> “diet follow nahi hui” </span> <span className="block text-[72px] lg:text-[80px] font-bold text-[#4A2040]"> guilt. </span> </h1>
 
-            {/* Heading */}
-            <h1 className="leading-[0.92] tracking-[-0.04em]">
+            {/* Mobile Heading */}
+<h1 className="block md:hidden leading-[1] tracking-[-0.04em]">
 
-              <span className="block text-[64px] font-bold text-[#4A2040] lg:text-[80px]">
-                No more
-              </span>
+  <span className="block text-[34px] font-bold text-[#4A2040]">
+    No more
+  </span>
 
-              <span className="block text-[38px] font-semibold italic text-[#C2185B] lg:text-[42px]">
-                “diet follow nahi hui”
-              </span>
+  <div className="mt-1 whitespace-nowrap">
+    <span className="text-[20px] font-semibold italic text-[#C2185B]">
+      “diet follow nahi hui”
+    </span>
 
-              <span className="block text-[64px] font-bold text-[#4A2040] lg:text-[80px]">
-                guilt.
-              </span>
+    <span className="ml-2 text-[34px] font-bold text-[#4A2040]">
+      guilt.
+    </span>
+  </div>
 
-            </h1>
-
+</h1>
             {/* Description */}
-            <p className="mt-6 max-w-[520px] text-[18px] leading-[1.8] text-[#6B4A60]">
+            <p className="mt-5 max-w-[520px] text-base md:text-lg leading-7 md:leading-8 text-[#6B4A60]">
               Berrika creates a personalized nutrition plan based on your
               goals, lifestyle, eating habits and body needs.
             </p>
 
             {/* CTA */}
             <div className="mt-8">
-
               <Link href="/get-started">
                 <button
                   className="
@@ -77,16 +74,18 @@ export default function HeroSection() {
                     bg-gradient-to-r
                     from-[#C2185B]
                     to-[#D81B60]
-                    px-8
-                    py-4
-                    text-[17px]
+                    px-7
+                    py-3.5
+                    md:px-8
+                    md:py-4
+                    text-base
+                    md:text-[17px]
                     font-semibold
                     text-white
                     shadow-[0_15px_40px_rgba(194,24,91,0.25)]
                     transition-all
                     duration-300
                     hover:-translate-y-1
-                    hover:shadow-[0_20px_50px_rgba(194,24,91,0.35)]
                   "
                 >
                   Start Your Journey
@@ -96,124 +95,94 @@ export default function HeroSection() {
                   </span>
                 </button>
               </Link>
-
             </div>
-
           </div>
 
           {/* RIGHT IMAGE */}
           <div className="flex justify-center lg:justify-end">
-
-            <div className="relative">
-
+            <div className="relative w-full max-w-[520px]">
               <Image
                 src="/images/berrika-01.png"
                 alt="Healthy Food"
                 width={520}
                 height={600}
-                className="w-full max-w-[520px] rounded-[32px] object-cover shadow-[0_25px_70px_rgba(74,32,64,0.10)]"
+                className="
+                  w-full
+                  rounded-[28px]
+                  md:rounded-[32px]
+                  object-cover
+                  shadow-[0_25px_70px_rgba(74,32,64,0.10)]
+                "
               />
 
               {/* Card 1 */}
-              <div className="absolute -top-3 -left-3 rounded-2xl border border-white/50 bg-white px-5 py-4 shadow-xl backdrop-blur-md">
-
-                <div className="flex items-center gap-3">
-
-                  <div className="flex h-11 w-11 items-center justify-center rounded-full bg-[#66BB6A] text-white">
+              <div className="absolute -top-2 -left-2 md:-top-3 md:-left-3 rounded-xl md:rounded-2xl border border-white/50 bg-white px-3 py-2 md:px-5 md:py-4 shadow-xl backdrop-blur-md">
+                <div className="flex items-center gap-2 md:gap-3">
+                  <div className="flex h-8 w-8 md:h-11 md:w-11 items-center justify-center rounded-full bg-[#66BB6A] text-white">
                     ✓
                   </div>
 
                   <div>
-                    <p className="text-[14px] font-semibold text-[#4A2040]">
+                    <p className="text-xs md:text-[14px] font-semibold text-[#4A2040]">
                       Meal Approved
                     </p>
 
-                    <p className="text-[12px] text-gray-500">
+                    <p className="hidden md:block text-[12px] text-gray-500">
                       Dietician verified
                     </p>
                   </div>
-
                 </div>
-
               </div>
 
               {/* Card 2 */}
-              <div className="absolute top-1/3 -right-3 rounded-2xl border border-white/50 bg-white px-5 py-4 shadow-xl backdrop-blur-md">
-
-                <div className="flex items-center gap-3">
-
-                  <div className="flex h-11 w-11 items-center justify-center rounded-full bg-[#C2185B] text-white">
+              <div className="absolute top-[32%] -right-2 md:-right-3 rounded-xl md:rounded-2xl border border-white/50 bg-white px-3 py-2 md:px-5 md:py-4 shadow-xl backdrop-blur-md">
+                <div className="flex items-center gap-2 md:gap-3">
+                  <div className="flex h-8 w-8 md:h-11 md:w-11 items-center justify-center rounded-full bg-[#C2185B] text-white">
                     💬
                   </div>
 
                   <div>
-                    <p className="text-[14px] font-semibold text-[#4A2040]">
+                    <p className="text-xs md:text-[14px] font-semibold text-[#4A2040]">
                       Cook WhatsApp
                     </p>
-
-                    <p className="text-[12px] text-gray-500">
-                      Instructions sent
-                    </p>
                   </div>
-
                 </div>
-
               </div>
 
               {/* Card 3 */}
-              <div className="absolute bottom-10 -left-3 rounded-2xl border border-white/50 bg-white px-5 py-4 shadow-xl backdrop-blur-md">
-
-                <div className="flex items-center gap-3">
-
-                  <div className="flex h-11 w-11 items-center justify-center rounded-full bg-[#4A2040] text-white">
+              <div className="absolute bottom-8 -left-2 md:-left-3 rounded-xl md:rounded-2xl border border-white/50 bg-white px-3 py-2 md:px-5 md:py-4 shadow-xl backdrop-blur-md">
+                <div className="flex items-center gap-2 md:gap-3">
+                  <div className="flex h-8 w-8 md:h-11 md:w-11 items-center justify-center rounded-full bg-[#4A2040] text-white">
                     📈
                   </div>
 
                   <div>
-                    <p className="text-[14px] font-semibold text-[#4A2040]">
-                      Compliance 92%
-                    </p>
-
-                    <p className="text-[12px] text-gray-500">
-                      On track this week
+                    <p className="text-xs md:text-[14px] font-semibold text-[#4A2040]">
+                      92% Compliance
                     </p>
                   </div>
-
                 </div>
-
               </div>
 
               {/* Card 4 */}
-              <div className="absolute bottom-0 right-0 rounded-2xl border border-white/50 bg-white px-5 py-4 shadow-xl backdrop-blur-md">
-
-                <div className="flex items-center gap-3">
-
-                  <div className="flex h-11 w-11 items-center justify-center rounded-full bg-[#F48FB1] text-white">
+              <div className="absolute bottom-0 right-0 rounded-xl md:rounded-2xl border border-white/50 bg-white px-3 py-2 md:px-5 md:py-4 shadow-xl backdrop-blur-md">
+                <div className="flex items-center gap-2 md:gap-3">
+                  <div className="flex h-8 w-8 md:h-11 md:w-11 items-center justify-center rounded-full bg-[#F48FB1] text-white">
                     🛒
                   </div>
 
                   <div>
-                    <p className="text-[14px] font-semibold text-[#4A2040]">
-                      Grocery Synced
-                    </p>
-
-                    <p className="text-[12px] text-gray-500">
-                      Shopping list ready
+                    <p className="text-xs md:text-[14px] font-semibold text-[#4A2040]">
+                      Grocery Ready
                     </p>
                   </div>
-
                 </div>
-
               </div>
-
             </div>
-
           </div>
 
         </div>
-
       </div>
-
     </section>
   );
 }
