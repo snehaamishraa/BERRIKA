@@ -1,7 +1,9 @@
-
 import Link from "next/link";
 
 export function Navbar() {
+  const navLink =
+    "text-[15px] font-medium text-[#4A2040] transition-colors duration-300 hover:text-[#C2185B]";
+
   return (
     <header className="fixed top-3 md:top-5 left-1/2 z-50 w-[95%] max-w-[1280px] -translate-x-1/2">
       <nav
@@ -24,7 +26,6 @@ export function Navbar() {
       >
         {/* Logo */}
         <div className="flex items-center gap-3">
-
           <div
             className="
               flex
@@ -52,7 +53,7 @@ export function Navbar() {
             className="
               text-xl
               md:text-2xl
-              lg:text-3xl
+              lg:text-[2rem]
               font-bold
               tracking-tight
               text-[#4A2040]
@@ -60,7 +61,6 @@ export function Navbar() {
           >
             Berrika
           </h1>
-
         </div>
 
         {/* Desktop Menu */}
@@ -69,35 +69,23 @@ export function Navbar() {
             hidden
             md:flex
             items-center
-            gap-6
-            lg:gap-10
+            gap-8
+            lg:gap-12
           "
         >
-          <a
-            href="#how-it-works"
-            className="text-sm lg:text-[15px] font-medium text-[#4A2040] transition hover:text-[#C2185B]"
-          >
+          <a href="#how-it-works" className={navLink}>
             How It Works
           </a>
 
-          <a
-            href="#cook-training"
-            className="text-sm lg:text-[15px] font-medium text-[#4A2040] transition hover:text-[#C2185B]"
-          >
+          <a href="#cook-training" className={navLink}>
             Cook Training
           </a>
 
-          <a
-            href="#success-stories"
-            className="text-sm lg:text-[15px] font-medium text-[#4A2040] transition hover:text-[#C2185B]"
-          >
+          <a href="#success-stories" className={navLink}>
             Success Stories
           </a>
 
-          <a
-            href="#faq"
-            className="text-sm lg:text-[15px] font-medium text-[#4A2040] transition hover:text-[#C2185B]"
-          >
+          <a href="#faq" className={navLink}>
             FAQ
           </a>
         </div>
@@ -111,7 +99,7 @@ export function Navbar() {
               from-[#C2185B]
               to-[#D81B60]
               px-4
-              md:px-6
+              md:px-7
               py-2.5
               md:py-3
               text-sm
