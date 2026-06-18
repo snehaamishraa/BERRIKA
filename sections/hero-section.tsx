@@ -44,37 +44,41 @@ export default function HeroSection() {
                 INDIA'S FIRST PERSONALIZED NUTRITION PLATFORM
               </span>
             </div>
+{/* Desktop */}
+<h1 className="hidden md:block leading-[0.88] tracking-[-0.06em]">
 
-            {/* Desktop Heading */}
-            <h1 className="hidden md:block leading-[0.9] tracking-[-0.05em]">
-              <span className="block text-[58px] lg:text-[68px] font-bold text-[#4A2040]">
-                No more
-              </span>
+  <span className="block text-[56px] lg:text-[64px] font-bold text-[#4A2040]">
+    No more
+  </span>
 
-              <span className="block text-[50px] lg:text-[60px] font-semibold italic text-[#C2185B]">
-                “diet follow nahi hui”
-              </span>
+  <span className="block text-[72px] lg:text-[88px] font-bold italic text-[#C2185B] leading-[0.88]">
+    “diet follow nahi hui”
+  </span>
 
-              <span className="block text-[58px] lg:text-[68px] font-bold text-[#4A2040]">
-                guilt.
-              </span>
-            </h1>
+  <span className="block text-[56px] lg:text-[64px] font-bold text-[#4A2040]">
+    guilt.
+  </span>
 
-            {/* Mobile Heading */}
-            <h1 className="block md:hidden leading-[0.95] tracking-[-0.04em]">
-              <span className="block text-[26px] font-bold text-[#4A2040]">
-                No more
-              </span>
+</h1>
 
-              <span className="block mt-1 text-[26px] font-semibold italic text-[#C2185B]">
-                “diet follow nahi hui”
-              </span>
+{/* Mobile */}
+<h1 className="block md:hidden leading-[0.9] tracking-[-0.05em]">
 
-              <span className="block mt-1 text-[26px] font-bold text-[#4A2040]">
-                guilt.
-              </span>
-            </h1>
+  <span className="block text-[28px] font-black text-[#4A2040]">
+    No more
+  </span>
 
+  <span className="block text-[34px] font-semi bold italic text-[#C2185B] leading-[0.9]">
+    “diet follow
+    <br />
+    nahi hui”
+  </span>
+
+  <span className="block text-[32px] font-black text-[#4A2040]">
+    guilt.
+  </span>
+
+</h1>
             {/* Description */}
             <p className="mt-5 max-w-[520px] text-base md:text-lg leading-7 md:leading-8 text-[#6B4A60]">
               Berrika creates a personalized nutrition plan based on your
