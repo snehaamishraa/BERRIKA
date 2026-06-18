@@ -51,7 +51,7 @@ export default function HeroSection() {
     No more
   </span>
 
-  <span className="block text-[72px] lg:text-[88px] font-bold italic text-[#C2185B] leading-[0.88]">
+  <span className="block text-[62px] lg:text-[78px] font-bold italic text-[#C2185B] leading-[0.88]">
     “diet follow nahi hui”
   </span>
 
@@ -68,13 +68,11 @@ export default function HeroSection() {
     No more
   </span>
 
-  <span className="block text-[34px] font-semi bold italic text-[#C2185B] leading-[0.9]">
-    “diet follow
-    <br />
-    nahi hui”
+  <span className="block text-[34px] font-bold italic text-[#C2185B] leading-[0.9]">
+    “diet follow nahi hui”
   </span>
 
-  <span className="block text-[32px] font-black text-[#4A2040]">
+  <span className="block text-[28px] font-black text-[#4A2040]">
     guilt.
   </span>
 
