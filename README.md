@@ -1,36 +1,168 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌿 Berrika — Personalized Nutrition Platform
 
-## Getting Started
+Berrika is a premium nutrition execution platform that helps families achieve their health goals through personalized diet planning, cook training, grocery coordination, and compliance tracking.
 
-First, run the development server:
+Unlike traditional diet apps that stop at planning, Berrika focuses on execution — ensuring healthy meals are actually prepared, served, and followed consistently.
+
+---
+
+## ✨ Features
+
+### 🥗 Personalized Nutrition Plans
+
+* Customized diet plans based on goals, lifestyle, eating habits, and health conditions.
+* Dietitian-led planning.
+
+### 👨‍🍳 Cook Training
+
+* WhatsApp-based cook onboarding.
+* Recipe cards with portions and substitutions.
+* Short instructional videos.
+* Continuous support and guidance.
+
+### 🛒 Grocery Coordination
+
+* Ingredient planning.
+* Grocery readiness support.
+* Kitchen execution management.
+
+### 📈 Compliance Tracking
+
+* Daily adherence monitoring.
+* Progress tracking.
+* Consistency-focused nutrition support.
+
+### 📱 Fully Responsive Experience
+
+* Optimized for:
+
+  * Mobile
+  * Tablet
+  * Desktop
+
+### 🎨 Premium UI/UX
+
+* Inspired by modern wellness and luxury lifestyle brands.
+* Clean typography.
+* Smooth layouts.
+* Conversion-focused design.
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+
+* Next.js 15
+* React
+* TypeScript
+
+### Styling
+
+* Tailwind CSS
+
+### Animation
+
+* Framer Motion
+
+### Icons
+
+* Lucide React
+
+### Fonts
+
+* Poppins
+
+---
+
+## 📂 Project Structure
+
+```bash
+app/
+├── page.tsx
+├── layout.tsx
+├── globals.css
+
+sections/
+├── hero-section.tsx
+├── trust-bar.tsx
+├── why-diets-fail.tsx
+├── how-it-works.tsx
+├── cook-training.tsx
+├── results-section.tsx
+├── success-stories.tsx
+├── faq-section.tsx
+├── final-cta.tsx
+├── footer.tsx
+
+components/
+├── count-up.tsx
+```
+
+## 🚀 Getting Started
+
+### Clone Repository
+
+```bash
+git clone <repository-url>
+cd berrika
+```
+
+### Install Dependencies
+
+```bash
+npm install
+```
+
+### Start Development Server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Visit:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Production Build
 
-## Learn More
+```bash
+npm run build
+npm start
+```
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🎯 Core Philosophy
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Most nutrition platforms provide plans.
 
-## Deploy on Vercel
+Berrika provides execution.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+We bridge the gap between:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+* Knowing what to eat
+* Actually eating it consistently
+
+By coordinating dietitians, cooks, groceries, and accountability systems, Berrika helps transform healthy intentions into measurable outcomes.
+
+---
+
+## 👥 Target Audience
+
+* Busy professionals
+* Families with cooks
+* Weight loss seekers
+* PCOS patients
+* Diabetes management
+* General wellness-focused individuals
+
+---
+
+## 📄 License
+
+This project is proprietary and intended for Berrika's official use.
+
+All rights reserved © Berrika.
