@@ -47,13 +47,11 @@ export default function CookTraining() {
           <div>
 <h2 className="leading-[0.92] tracking-[-0.05em]">
 
-  <span className="less bold text-[38px] md:text-[50px] lg:text-[56px] font-extrabold text-[#4A2040]">
-    We don't replace
+  <span className="bold text-[18px] md:text-[29px] lg:text-[56px] font-extrabold text-[#4A2040]">
+    We don't replace your cook.
   </span>
-
-  <span className="less bold text-[38px] md:text-[50px] lg:text-[56px] font-extrabold text-[#4A2040]">
-    your cook.
-  </span>
+   
+  
 
   <span className="block mt-2 text-[38px] md:text-[50px] lg:text-[56px] font-extrabold italic text-[#C2185B]">
     We upgrade them.

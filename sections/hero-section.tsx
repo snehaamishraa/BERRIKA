@@ -47,15 +47,15 @@ export default function HeroSection() {
 {/* Desktop */}
 <h1 className="hidden md:block leading-[0.88] tracking-[-0.06em]">
 
-  <span className="block text-[56px] lg:text-[64px] font-bold text-[#4A2040]">
+  <span className="block text-[36px] lg:text-[50px] font-bold text-[#4A2040]">
     No more
   </span>
 
-  <span className="block text-[62px] lg:text-[78px] font-bold italic text-[#C2185B] leading-[0.88]">
+  <span className="block text-[22px] lg:text-[54.3px] font-bold italic text-[#C2185B] leading-[0.88]">
     “diet follow nahi hui”
   </span>
 
-  <span className="block text-[56px] lg:text-[64px] font-bold text-[#4A2040]">
+  <span className="block text-36px] lg:text-[50px] font-bold text-[#4A2040]">
     guilt.
   </span>
 
