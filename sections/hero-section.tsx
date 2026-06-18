@@ -1,6 +1,12 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import {
+  CheckCircle,
+  MessageCircle,
+  TrendingUp,
+  ShoppingCart,
+} from "lucide-react";
 
 export default function HeroSection() {
   return (
@@ -38,23 +44,37 @@ export default function HeroSection() {
                 INDIA'S FIRST PERSONALIZED NUTRITION PLATFORM
               </span>
             </div>
-            {/* DESKTOP HEADING */} <h1 className="hidden md:block leading-[0.9] tracking-[-0.05em]"> <span className="block text-[72px] lg:text-[80px] font-bold text-[#4A2040]"> No more </span> <span className="block text-[38px] lg:text-[42px] font-semibold italic text-[#C2185B]"> “diet follow nahi hui” </span> <span className="block text-[72px] lg:text-[80px] font-bold text-[#4A2040]"> guilt. </span> </h1>
+            {/* DESKTOP HEADING */}
+<h1 className="hidden md:block leading-[0.9] tracking-[-0.05em]">
+  <span className="block text-[58px] lg:text-[68px] font-bold text-[#4A2040]">
+    No more
+  </span>
 
-            {/* Mobile Heading */}
-<h1 className="block md:hidden leading-[1] tracking-[-0.04em]">
+  <span className="block text-[50px] lg:text-[60px] font-semibold italic text-[#C2185B]">
+    “diet follow nahi hui”
+  </span>
 
-  <span className="block text-[34px] font-bold text-[#4A2040]">
+  <span className="block text-[58px] lg:text-[68px] font-bold text-[#4A2040]">
+    guilt.
+  </span>
+</h1>
+
+<h1 className="block md:hidden leading-[0.95] tracking-[-0.04em]">
+
+  <span className="block text-[26px] font-bold text-[#4A2040]">
     No more
   </span>
 
   <div className="mt-1 whitespace-nowrap">
-    <span className="text-[20px] font-semibold italic text-[#C2185B]">
+
+    <span className="text-[32px] font-semibold italic text-[#C2185B]">
       “diet follow nahi hui”
     </span>
 
-    <span className="ml-2 text-[34px] font-bold text-[#4A2040]">
+    <span className="ml-2 text-[26px] font-bold text-[#4A2040]">
       guilt.
     </span>
+
   </div>
 
 </h1>
@@ -98,88 +118,99 @@ export default function HeroSection() {
             </div>
           </div>
 
-          {/* RIGHT IMAGE */}
-          <div className="flex justify-center lg:justify-end">
-            <div className="relative w-full max-w-[520px]">
-              <Image
-                src="/images/berrika-01.png"
-                alt="Healthy Food"
-                width={520}
-                height={600}
-                className="
-                  w-full
-                  rounded-[28px]
-                  md:rounded-[32px]
-                  object-cover
-                  shadow-[0_25px_70px_rgba(74,32,64,0.10)]
-                "
-              />
+         {/* RIGHT IMAGE */}
+<div className="flex justify-center lg:justify-end">
+  <div className="relative w-full max-w-[520px]">
 
-              {/* Card 1 */}
-              <div className="absolute -top-2 -left-2 md:-top-3 md:-left-3 rounded-xl md:rounded-2xl border border-white/50 bg-white px-3 py-2 md:px-5 md:py-4 shadow-xl backdrop-blur-md">
-                <div className="flex items-center gap-2 md:gap-3">
-                  <div className="flex h-8 w-8 md:h-11 md:w-11 items-center justify-center rounded-full bg-[#66BB6A] text-white">
-                    ✓
-                  </div>
+    <Image
+      src="/images/berrika-01.png"
+      alt="Healthy Food"
+      width={520}
+      height={600}
+      className="
+        w-full
+        rounded-[28px]
+        md:rounded-[32px]
+        object-cover
+        shadow-[0_25px_70px_rgba(74,32,64,0.10)]
+      "
+    />
 
-                  <div>
-                    <p className="text-xs md:text-[14px] font-semibold text-[#4A2040]">
-                      Meal Approved
-                    </p>
+    {/* Card 1 */}
+    <div className="absolute -top-5 left-0 md:left-2 rounded-2xl border border-white/50 bg-white/95 px-4 py-3 shadow-xl backdrop-blur-md animate-float">
 
-                    <p className="hidden md:block text-[12px] text-gray-500">
-                      Dietician verified
-                    </p>
-                  </div>
-                </div>
-              </div>
+      <div className="flex items-center gap-3">
 
-              {/* Card 2 */}
-              <div className="absolute top-[32%] -right-2 md:-right-3 rounded-xl md:rounded-2xl border border-white/50 bg-white px-3 py-2 md:px-5 md:py-4 shadow-xl backdrop-blur-md">
-                <div className="flex items-center gap-2 md:gap-3">
-                  <div className="flex h-8 w-8 md:h-11 md:w-11 items-center justify-center rounded-full bg-[#C2185B] text-white">
-                    💬
-                  </div>
+        <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#66BB6A] text-white">
+          <CheckCircle size={18} />
+        </div>
 
-                  <div>
-                    <p className="text-xs md:text-[14px] font-semibold text-[#4A2040]">
-                      Cook WhatsApp
-                    </p>
-                  </div>
-                </div>
-              </div>
+        <div>
+          <p className="font-semibold text-[#4A2040]">
+            Meal Approved
+          </p>
 
-              {/* Card 3 */}
-              <div className="absolute bottom-8 -left-2 md:-left-3 rounded-xl md:rounded-2xl border border-white/50 bg-white px-3 py-2 md:px-5 md:py-4 shadow-xl backdrop-blur-md">
-                <div className="flex items-center gap-2 md:gap-3">
-                  <div className="flex h-8 w-8 md:h-11 md:w-11 items-center justify-center rounded-full bg-[#4A2040] text-white">
-                    📈
-                  </div>
+          <p className="text-xs text-[#7A5A70]">
+            Dietician Verified
+          </p>
+        </div>
 
-                  <div>
-                    <p className="text-xs md:text-[14px] font-semibold text-[#4A2040]">
-                      92% Compliance
-                    </p>
-                  </div>
-                </div>
-              </div>
+      </div>
 
-              {/* Card 4 */}
-              <div className="absolute bottom-0 right-0 rounded-xl md:rounded-2xl border border-white/50 bg-white px-3 py-2 md:px-5 md:py-4 shadow-xl backdrop-blur-md">
-                <div className="flex items-center gap-2 md:gap-3">
-                  <div className="flex h-8 w-8 md:h-11 md:w-11 items-center justify-center rounded-full bg-[#F48FB1] text-white">
-                    🛒
-                  </div>
+    </div>
 
-                  <div>
-                    <p className="text-xs md:text-[14px] font-semibold text-[#4A2040]">
-                      Grocery Ready
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+    {/* Card 2 */}
+    <div className="absolute top-[30%] -right-5 rounded-2xl border border-white/50 bg-white/95 px-5 py-4 shadow-xl backdrop-blur-md animate-float-delayed">
+
+      <div className="flex items-center gap-3">
+
+        <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#C2185B] text-white">
+          <MessageCircle size={18} />
+        </div>
+
+        <p className="font-semibold text-[#4A2040]">
+          Cook WhatsApp
+        </p>
+
+      </div>
+
+    </div>
+
+    {/* Card 3 */}
+    <div className="absolute bottom-12 -left-5 rounded-2xl border border-white/50 bg-white/95 px-5 py-4 shadow-xl backdrop-blur-md animate-float">
+
+      <div className="flex items-center gap-3">
+
+        <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#4A2040] text-white">
+          <TrendingUp size={18} />
+        </div>
+
+        <p className="font-semibold text-[#4A2040]">
+          92% Compliance
+        </p>
+
+      </div>
+
+    </div>
+
+    {/* Card 4 */}
+    <div className="absolute bottom-0 -right-4 rounded-2xl border border-white/50 bg-white/95 px-5 py-4 shadow-xl backdrop-blur-md animate-float-delayed">
+
+      <div className="flex items-center gap-3">
+
+        <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#F48FB1] text-white">
+          <ShoppingCart size={18} />
+        </div>
+
+        <p className="font-semibold text-[#4A2040]">
+  Grocery Ready
+</p>
+
+      </div>
+    </div>
+
+  </div>
+</div>
 
         </div>
       </div>

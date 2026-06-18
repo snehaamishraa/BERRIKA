@@ -1,35 +1,27 @@
 "use client";
 
-import {
-AlertCircle,
-ShoppingCart,
-ChefHat,
-Heart,
-} from "lucide-react";
+import { AlertCircle } from "lucide-react";
 
 export default function WhyDietsFail() {
 const cards = [
 {
 number: "01",
-icon: <ShoppingCart size={20} strokeWidth={2.2} />,
 title: "You got a diet chart.",
 desc: "But who buys the ingredients?",
 },
 {
 number: "02",
-icon: <ChefHat size={20} strokeWidth={2.2} />,
 title: "You have a cook.",
 desc: "But who ensures they follow the diet?",
 },
 {
 number: "03",
-icon: <Heart size={20} strokeWidth={2.2} />,
 title: "You try to stay consistent.",
 desc: "But life gets in the way.",
 },
 ];
 
-return ( <section className="relative overflow-hidden py-16 md:py-20">
+return ( <section className="relative overflow-hidden py-10 md:py-14">
 {/* Grid Background */}
 <div
 className="absolute inset-0"
@@ -42,15 +34,12 @@ backgroundSize: "48px 48px",
 }}
 />
 
-```
   {/* Glow */}
-  <div className="absolute left-1/2 top-24 h-[320px] w-[320px] md:h-[420px] md:w-[420px] -translate-x-1/2 rounded-full bg-[#F48FB1]/10 blur-[120px]" />
+  <div className="absolute left-1/2 top-20 h-[260px] w-[260px] md:h-[340px] md:w-[340px] -translate-x-1/2 rounded-full bg-[#F48FB1]/10 blur-[100px]" />
 
   <div className="relative mx-auto max-w-[1280px] px-5 md:px-8 lg:px-10">
-
     {/* Badge */}
-    <div className="mb-4 inline-flex items-center rounded-full border border-[#F48FB1]/20 bg-white/80 px-4 py-2 backdrop-blur-md shadow-sm">
-
+    <div className="mb-3 inline-flex items-center rounded-full border border-[#F48FB1]/20 bg-white/80 px-4 py-2 backdrop-blur-md shadow-sm">
       <AlertCircle
         size={14}
         strokeWidth={2.5}
@@ -60,23 +49,21 @@ backgroundSize: "48px 48px",
       <span className="text-[11px] font-semibold uppercase tracking-[0.25em] text-[#C2185B]">
         THE REAL PROBLEM
       </span>
-
     </div>
 
     {/* Heading */}
-    <h2 className="max-w-4xl text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-[#4A2040]">
+    <h2 className="max-w-3xl text-3xl md:text-5xl font-bold leading-tight text-[#4A2040]">
       Why most diets fail.
     </h2>
 
     {/* Description */}
-    <p className="mt-4 max-w-3xl text-base md:text-lg leading-7 md:leading-8 text-[#7A5A70]">
+    <p className="mt-3 max-w-2xl text-sm md:text-base leading-7 text-[#7A5A70]">
       Diet charts are a plan. Health is an outcome.
       Between them sits the hardest part — daily execution.
     </p>
 
     {/* Cards */}
-    <div className="mt-10 grid gap-4 md:gap-5 lg:grid-cols-3">
-
+    <div className="mt-8 grid gap-3 md:gap-4 lg:grid-cols-3">
       {cards.map((card) => (
         <div
           key={card.number}
@@ -84,66 +71,40 @@ backgroundSize: "48px 48px",
             group
             relative
             overflow-hidden
-            rounded-[24px]
+            rounded-[20px]
             border
             border-[#F48FB1]/15
             bg-white/90
-            p-5
-            md:p-6
+            p-4
+            md:p-5
             backdrop-blur-md
-            shadow-[0_8px_25px_rgba(194,24,91,0.05)]
+            shadow-[0_6px_20px_rgba(194,24,91,0.05)]
             transition-all
             duration-300
             hover:-translate-y-1
-            hover:shadow-[0_12px_30px_rgba(194,24,91,0.10)]
+            hover:shadow-[0_12px_24px_rgba(194,24,91,0.10)]
           "
         >
-          {/* Soft Glow */}
-          <div className="absolute -right-10 -top-10 h-24 w-24 rounded-full bg-[#F48FB1]/10 blur-2xl" />
+          <div className="absolute -right-8 -top-8 h-20 w-20 rounded-full bg-[#F48FB1]/10 blur-2xl" />
 
-          {/* Number */}
-          <span className="absolute right-4 top-2 text-5xl md:text-6xl font-bold text-[#F8EDF2]">
+          <span className="absolute right-3 top-2 text-4xl md:text-5xl font-bold text-[#F8EDF2]">
             {card.number}
           </span>
 
-          {/* Icon */}
-          <div
-            className="
-              mb-5
-              flex
-              h-12
-              w-12
-              items-center
-              justify-center
-              rounded-2xl
-              bg-gradient-to-br
-              from-[#C2185B]
-              to-[#F48FB1]
-              text-white
-              shadow-[0_8px_20px_rgba(194,24,91,0.18)]
-            "
-          >
-            {card.icon}
-          </div>
-
-          {/* Title */}
-          <h3 className="mb-2 text-xl md:text-2xl font-bold leading-tight text-[#4A2040]">
+          <h3 className="text-lg md:text-xl font-bold leading-tight text-[#4A2040]">
             {card.title}
           </h3>
 
-          {/* Description */}
-          <p className="text-sm md:text-base leading-6 text-[#7A5A70]">
+          <p className="mt-2 text-sm leading-6 text-[#7A5A70]">
             {card.desc}
           </p>
         </div>
       ))}
-
     </div>
 
     {/* Bottom Statement */}
-    <div className="mt-12 md:mt-16 text-center">
-
-      <h3 className="text-2xl md:text-4xl lg:text-5xl font-bold leading-tight text-[#4A2040]">
+    <div className="mt-10 md:mt-12 text-center">
+      <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold leading-tight text-[#4A2040]">
         Berrika solves all three.
         <br />
 
@@ -153,9 +114,7 @@ backgroundSize: "48px 48px",
         </span>{" "}
         for your health.
       </h3>
-
     </div>
-
   </div>
 </section>
 

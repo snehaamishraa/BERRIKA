@@ -23,9 +23,7 @@ export default function Footer() {
             </div>
 
             <p className="mx-auto mt-4 max-w-md text-sm leading-7 text-[#7A5A70] md:mx-0">
-              India&apos;s first Diet Execution OS.
-              We don&apos;t just create diet plans —
-              we make sure they actually happen.
+              India&apos;s first Diet Execution OS
             </p>
 
           </div>
@@ -38,7 +36,7 @@ export default function Footer() {
             </h4>
 
             <div className="mt-4 space-y-2 text-sm text-[#7A5A70]">
-              <p>hello@berrika.com</p>
+              <p>hello@berrika.in</p>
               <p>Bangalore, India</p>
             </div>
 
